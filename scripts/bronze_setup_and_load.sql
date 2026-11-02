@@ -1,4 +1,42 @@
+/*
+===============================================================================
+Bronze Layer Setup and Data Load
+===============================================================================
 
+Script Purpose:
+    This script prepares and loads the Bronze Layer of the Data Warehouse.
+
+    It performs two main tasks:
+
+    1. Creates the Bronze tables for the CRM and ERP source systems.
+       If a table already exists, it is dropped and recreated.
+
+    2. Loads raw CSV data into the Bronze tables using BULK INSERT.
+       Before each load, the target table is truncated to remove old data.
+
+    The script also includes execution-time tracking for each table and
+    TRY...CATCH error handling to make the loading process easier to monitor
+    and troubleshoot.
+
+Bronze Layer Principle:
+    Data is loaded as close as possible to the source format with minimal
+    transformations. Data cleaning and standardization are handled later
+    in the Silver Layer.
+
+Source Systems:
+    - CRM
+    - ERP
+
+Main Operations:
+    - DROP TABLE / CREATE TABLE
+    - TRUNCATE TABLE
+    - BULK INSERT
+    - GETDATE / DATEDIFF
+    - TRY...CATCH
+    - PRINT messages for monitoring
+
+===============================================================================
+*/
 CREATE OR ALTER PROCEDURE Bronze.load_Bronze  AS
 BEGIN
     
