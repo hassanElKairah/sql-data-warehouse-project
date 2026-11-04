@@ -88,7 +88,7 @@ The Gold Layer follows a **Star Schema**, where a central fact view connects to 
 
 ### Data Model Diagram
 
-![Gold Layer Star Schema](02_docs/data_model.png)
+![Gold Layer Star Schema](docs/data_model.png)
 
 ### Dimension Views
 
@@ -149,7 +149,7 @@ The data pipeline follows an end-to-end flow from operational source systems to 
 
 ### Data Flow Diagram
 
-![Data Flow and Lineage](02_docs/data_flow.png)
+![Data Flow and Lineage](docs/Data_Lineage.png)
 
 ### Data Processing Flow
 
@@ -371,7 +371,6 @@ The tutorial provided a practical foundation for understanding data warehouse ar
 
 - [SQL Data Warehouse Project — YouTube](https://youtu.be/9GVqKuTVANE)
 - [Original GitHub Repository](https://github.com/DataWithBaraa/sql-data-warehouse-project)
-- [Data With Baraa Website](https://www.datawithbaraa.com/)
 - [SQL Full Course](https://youtu.be/SSKVgrwhzus)
 
 I used these resources as a learning reference while practicing SQL development, implementing the Data Warehouse, and preparing my own project documentation.
