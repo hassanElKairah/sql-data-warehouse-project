@@ -35,7 +35,7 @@ The data warehouse follows the **Medallion Architecture**, organized into three 
 
 ### Architecture Diagram
 
-![Data Warehouse Architecture](02_docs/data_architecture.png)
+![Data Warehouse Architecture](docs/data_archetecture.png)
 
 ### 1. Bronze Layer — Raw Data
 
