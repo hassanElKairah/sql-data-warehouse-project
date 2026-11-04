@@ -182,26 +182,6 @@ Data lineage documents the origin, transformations, and dependencies of data acr
 
 It supports traceability, debugging, data quality analysis, and impact assessment.
 
----
-
-## 📂 Repository Structure
-
-The project is organized into the following directories:
-
-| Directory / File | Description |
-|---|---|
-| `01_datasets/` | CSV source files from CRM and ERP systems. |
-| `01_datasets/source_crm/` | Customer, product, and sales source data. |
-| `01_datasets/source_erp/` | ERP customer, location, and category data. |
-| `02_docs/` | Project documentation, architecture diagrams, data catalog, and lineage. |
-| `03_scripts/` | SQL scripts for implementing the Data Warehouse. |
-| `03_scripts/init_database.sql` | Creates the DataWarehouse database and schemas. |
-| `03_scripts/bronze/` | Bronze Layer table creation and data loading scripts. |
-| `03_scripts/silver/` | Silver Layer table creation and data cleansing scripts. |
-| `03_scripts/gold/` | Gold Layer dimension and fact view definitions. |
-| `04_tests/` | SQL validation and data quality checks. |
-| `README.md` | Project overview, architecture, and documentation. |
-| `LICENSE` | Repository license information. |
 
 ---
 
